@@ -14,8 +14,10 @@
 ## JS Engine (V8)
 
 - Call Stack
-- Heap Memory
-- GC
+- Memory
+  - Heap Memory
+  - Memory life cycle
+  - Garbage collection  
 - Parser
 - Interpreter
 - Compiler
@@ -60,19 +62,39 @@
 # Javascript
 
 ## Fundamentals
-- Variables
-- Types
+
+- Data types
+  - Primitive values
+  - Objects (reference)
 - Scope & Hoisting
+- Statements
+  - Variables
+  - Control flow
+  - Functions
+  - Classes
+  - Iterations
+- Expressions
+  - Primary
+  - Left-hand-side
+- Data structures
+  - Indexed collections
+  - Keyed collections
+  - Structured data
 - Functions
-- Callbacks
-- Events
+  - Arrow Functions
+  - Default parameters
+  - Rest parameters
+  - Arguments
+  - Callbacks
+- Event Handling
 - Error Handling
-- try / catch / finally
 - Promises
 - async / await
-- Classes
+
 
 ---
+
+
 
 # React Internals
 
