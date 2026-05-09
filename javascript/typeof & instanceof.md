@@ -1,12 +1,12 @@
 | Expression   | `typeof`  | `instanceof`  | Prototype Chain |
 |--------------|------------------|--------------------|------------------|
-| `42` | `"number"` | — | (primitive → no prototype chain) |
-| `"text"` | `"string"` | — | (primitive → no prototype chain) |
-| `true` | `"boolean"` | — | (primitive → no prototype chain) |
-| `Symbol("id")` | `"symbol"` | — | (primitive → no prototype chain) |
-| `42n` | `"bigint"` | — | (primitive → no prototype chain) |
-| `undefined` | `"undefined"` | — | (no object / no prototype chain) |
-| `null` | ⚠️ `"object"` | — | (no prototype chain) |
+| `42` | `"number"` | — | No prototype chain |
+| `"text"` | `"string"` | — | No prototype chain |
+| `true` | `"boolean"` | — | No prototype chain |
+| `Symbol("id")` | `"symbol"` | — | No prototype chain |
+| `42n` | `"bigint"` | — | No prototype chain |
+| `undefined` | `"undefined"` | — | No prototype chain |
+| `null` | ⚠️ `"object"` | — | No prototype chain |
 | `[]` | `"object"` | `instanceof Array` | `Array.prototype → Object.prototype → null` |
 | `Array` | `"function"` | `instanceof Function` | `Function.prototype → Object.prototype → null` |
 | `{}` | `"object"` | `instanceof Object` | `Object.prototype → null` |
