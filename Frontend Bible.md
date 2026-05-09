@@ -65,10 +65,10 @@
 
 - Data types
   - Primitive values
-  - Objects (reference)
+  - Objects (reference)    
     - Built-in primitive wrapper objects
-    - Built-in Utility objects
     - Built-in Constructor objects
+    - Built-in Utility objects    
 - Scope & Hoisting
 - Statements
   - Variables
