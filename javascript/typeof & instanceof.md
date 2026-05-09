@@ -1,3 +1,29 @@
+# JavaScript typeof / instanceof / Prototype Chain
+
+| Expression | typeof | instanceof | Prototype Chain |
+|------------|--------|------------|-----------------|
+| const num = 42 | "number" | — | No prototype chain |
+| const str = "text" | "string" | — | No prototype chain |
+| const bool = true | "boolean" | — | No prototype chain |
+| const sym = Symbol("id") | "symbol" | — | No prototype chain |
+| const big = 42n | "bigint" | — | No prototype chain |
+| const und = undefined | "undefined" | — | No prototype chain |
+| const nul = null | "object" | — | No prototype chain |
+| const arr = new Array() | "object" | arr instanceof Array → true | Array.prototype → Object.prototype → null |
+| const obj = {} | "object" | obj instanceof Object → true | Object.prototype → null |
+| const date = new Date() | "object" | date instanceof Date → true | Date.prototype → Object.prototype → null |
+| const regex = /regex/ | "object" | regex instanceof RegExp → true | RegExp.prototype → Object.prototype → null |
+| const map = new Map() | "object" | map instanceof Map → true | Map.prototype → Object.prototype → null |
+| const set = new Set() | "object" | set instanceof Set → true | Set.prototype → Object.prototype → null |
+| const promise = new Promise(r => r()) | "object" | promise instanceof Promise → true | Promise.prototype → Object.prototype → null |
+| const err = new Error() | "object" | err instanceof Error → true | Error.prototype → Object.prototype → null |
+| const fn = function() {} | "function" | fn instanceof Function → true | Function.prototype → Object.prototype → null |
+| const arrow = () => {} | "function" | arrow instanceof Function → true | Function.prototype → Object.prototype → null |
+| const user = new (function User() {})() | "object" | user instanceof Object → true | Object.prototype → null |
+| const numObj = new Number(5) | "object" | numObj instanceof Number → true | Number.prototype → Object.prototype → null |
+| const strObj = new String("x") | "object" | strObj instanceof String → true | String.prototype → Object.prototype → null |
+| const boolObj = new Boolean(true) | "object" | boolObj instanceof Boolean → true | Boolean.prototype → Object.prototype → null |
+
 | Expression   | `typeof`  | `instanceof`  | Prototype Chain |
 |--------------|------------------|--------------------|------------------|
 | `42` | `"number"` | — | No prototype chain |
