@@ -66,6 +66,9 @@
 - Data types
   - Primitive values
   - Objects (reference)
+    - Built-in primitive wrapper objects
+    - Built-in Utility objects
+    - Built-in Constructor objects
 - Scope & Hoisting
 - Statements
   - Variables
@@ -81,6 +84,7 @@
   - Keyed collections
   - Structured data
 - Functions
+  - Global Built-ins 
   - Arrow Functions
   - Default parameters
   - Rest parameters
