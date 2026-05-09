@@ -84,7 +84,7 @@
   - Keyed collections
   - Structured data
 - Functions
-  - Global Built-ins 
+  - Global Built-ins functions
   - Arrow Functions
   - Default parameters
   - Rest parameters
