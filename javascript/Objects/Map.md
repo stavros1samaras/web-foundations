@@ -6,9 +6,6 @@
 |---|---|---|---|
 | `new Map()` | Creates a new Map | `new Map([["a",1],["b",2]])` | `Map(2) {"a" => 1, "b" => 2}` |
 
-> Note: Map has almost no static methods besides the constructor.
-
----
 
 ## Instance Methods (Prototype)
 
@@ -24,7 +21,6 @@
 | `.entries()` | Returns an iterator of [key, value] pairs | `Array.from(m.entries())` | `[["a",1],["b",2]]` |
 | `.forEach()` | Executes a function for each key-value pair | `m.forEach((v,k)=>console.log(k,v))` | `a 1` `b 2` |
 
----
 
 ## Instance Properties
 
