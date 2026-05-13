@@ -90,7 +90,17 @@
   - Rest parameters
   - Arguments
   - Callbacks
-- Error Handling
+- Classes
+  - Constructor
+  - Instance Properties
+  - Instance Methods
+  - Static Methods
+  - Static Properties
+  - Getters
+  - Setters
+  - Private Fields
+  - Inheritance (extends)
+- Errors
 - Promises
 - async / await
 
