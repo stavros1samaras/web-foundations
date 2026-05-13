@@ -90,10 +90,27 @@
   - Rest parameters
   - Arguments
   - Callbacks
-- Event Handling
 - Error Handling
 - Promises
 - async / await
+
+## Browser Apis
+- Events
+- Networking
+  - Fetch
+  - WebSockets
+  - WebRTC
+  - Server-Sent Events
+- Parallelism
+  - Web Workers
+  - Service Workers
+- Storage
+  - LocalStorage
+  - SessionStorage
+  - Cache
+  - IndexedDB
+
+
 
 
 ---
