@@ -5,7 +5,7 @@
 
 # Browser
 
-## Browser Runtime
+## Javascript Runtime (Browser)
 
 - Event Loop
 - Microtask
@@ -60,6 +60,13 @@
 - BOM tree
 
 # Javascript
+
+## Runtime & JS Engine Concepts
+- Event Loop
+- JIT Compilation
+- Prototype Chain
+- Execution Context
+- Garbage Collection
 
 ## Fundamentals
 
