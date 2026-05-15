@@ -1,63 +1,47 @@
 <img width="1002" height="973" alt="εικόνα" src="https://github.com/user-attachments/assets/a9603b32-2878-4055-9331-081af7b7b2f8" />
 
 
-
-
 # Browser
-
-## Javascript Runtime (Browser)
-
-- Event Loop
-- Microtask
-- Macrotask
-
-## JS Engine (V8)
-
-- Call Stack
+- Javascript Runtime
+  - Event Loop
+  - Microtask
+  - Macrotask
+- JS Engine (V8)
+  - Call Stack
+  - Memory
+    - Heap Memory
+    - Memory life cycle
+    - Garbage collection  
+  - Parser
+  - Interpreter
+  - Compiler
+- Web APIs
+  - Fetch API
+  - Storage API
+  - Events API
+  - DOM API
+- Network Application Layer
+  - HTTPS
+  - DNS
+  - WebSocket
+- Rendering Engine (Blink)
+  - HTML Parser
+  - CSS Parser
+  - Layout
+  - Paint
 - Memory
-  - Heap Memory
-  - Memory life cycle
-  - Garbage collection  
-- Parser
-- Interpreter
-- Compiler
-
-## Web APIs
-
-- Fetch API
-- Storage API
-- Events API
-- DOM API
-
-## Network Application Layer
-
-- HTTPS
-- DNS
-- WebSocket
-
-## Rendering Engine (Blink)
-
-- HTML Parser
-- CSS Parser
-- Layout
-- Paint
-
-## Memory
-
-- localStorage
-- sessionStorage
-- Cache (Cache API)
-- IndexedDB
-- Cookies
-
-## Trees
-
-- DOM tree
-- CSSOM tree
-- Render tree
-- Accessibility tree
-- Layer tree
-- BOM tree
+  - localStorage
+  - sessionStorage
+  - Cache (Cache API)
+  - IndexedDB
+  - Cookies
+- Trees
+  - DOM tree
+  - CSSOM tree
+  - Render tree
+  - Accessibility tree
+  - Layer tree
+  - BOM tree
 
 # Javascript
 
