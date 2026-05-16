@@ -8,10 +8,7 @@
   - Macrotask
 - JS Engine (V8)
   - Call Stack
-  - Memory
-    - Heap Memory
-    - Memory life cycle
-    - Garbage collection  
+  - Heap Memory 
   - Parser
   - Interpreter
   - Compiler
@@ -46,10 +43,20 @@
 # Javascript
 
 ## Runtime & JS Engine Concepts
-- Event Loop
+- Agent execution model
+  - Realms
+  - Scheduler
+    - Event Loop
+    - Microtask Queue
+    - Macrotask Queue
+  - JS Engine
+    - Heap Memory
+    - Call Stack (Stack of execution contexts)
+      - Execution Context
+        - Global EC
+        - Function EC
 - JIT Compilation
 - Prototype Chain
-- Execution Context
 - Garbage Collection
 
 ## Fundamentals
