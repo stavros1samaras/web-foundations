@@ -133,15 +133,14 @@
 - Concurrent rendering (React 18+)
 
 ### Rendering Model
-- Component render / Mount / Update / Unmount
-- Re-renders (on state/props change)
+- Component  Mount / Update (re-render) / Unmount
 - Virtual DOM
 - Reconciliation (diffing algorithm)
 
 ### Events System
 - Synthetic events
 - Event handlers (onClick etc.)
-- Cleanup functions
+
 
 
 https://medium.com/@canpolat.dev/deep-dive-into-reacts-internal-architecture-from-virtual-dom-to-fiber-08dcf66b309d
