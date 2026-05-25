@@ -127,19 +127,19 @@
 
 # React Internals
 
-## Architecture
-- React Fiber architecture
-- Scheduler / prioritization
-- Concurrent rendering (React 18+)
+- Architecture
+  - React Fiber architecture
+  - Scheduler / prioritization
+  - Concurrent rendering (React 18+)
 
-### Rendering Model
-- Component  Mount / Update (re-render) / Unmount
-- Virtual DOM
-- Reconciliation (diffing algorithm)
+- Rendering Model
+  - Component  Mount / Update (re-render) / Unmount
+  - Virtual DOM
+    - Reconciliation (diffing algorithm)
 
-### Events System
-- Synthetic events
-- Event handlers (onClick etc.)
+- Events System
+  - Synthetic events
+  - Event handlers (onClick etc.)
 
 
 
