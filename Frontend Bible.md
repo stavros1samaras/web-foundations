@@ -123,6 +123,7 @@
 
 # React Internals
 
+- Compiler 
 - React Fiber architecture
   - Virtual DOM
     - Element Tree
@@ -138,6 +139,10 @@
       - Render Phase 
       - Commit Phase
       - Browser Paint
+- Hooks 
+- Components 
+- APIs 
+- Directives 
 
 - Events System
   - Synthetic events
