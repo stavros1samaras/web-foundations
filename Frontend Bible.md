@@ -127,15 +127,23 @@
 
 # React Internals
 
-- Architecture
-  - React Fiber architecture
-  - Scheduler / prioritization
-  - Concurrent rendering (React 18+)
-
-- Rendering Model
-  - Component  Mount / Update (re-render) / Unmount
+- React Fiber architecture
   - Virtual DOM
+    - Element Tree
+    - Fiber Tree
     - Reconciliation (diffing algorithm)
+  - Concurrent rendering
+    - Prioritization
+    - Rendering lifecycle
+      - Mount
+      - Update (re-render)
+      - Unmount
+    - Rendering process
+      - Render Phase 
+      - Commit Phase
+        - Browser Paint
+
+  
 
 - Events System
   - Synthetic events
