@@ -144,11 +144,6 @@
 - APIs 
 - Directives 
 
-- Events System
-  - Synthetic events
-  - Event handlers (onClick etc.)
-
-
 https://medium.com/@canpolat.dev/deep-dive-into-reacts-internal-architecture-from-virtual-dom-to-fiber-08dcf66b309d
 
 # Framework
