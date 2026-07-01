@@ -1,3 +1,4 @@
+# Frontend Bible
 <img width="1002" height="973" alt="εικόνα" src="https://github.com/user-attachments/assets/a9603b32-2878-4055-9331-081af7b7b2f8" />
 
 
