@@ -1,15 +1,16 @@
 # Frontend Bible
-<img width="700" height="700" alt="εικόνα" src="https://github.com/user-attachments/assets/a9603b32-2878-4055-9331-081af7b7b2f8" />
 
+<img width="700" height="700" src="https://github.com/user-attachments/assets/a9603b32-2878-4055-9331-081af7b7b2f8" />
 
 # Browser
+
 - Javascript Runtime
   - Event Loop
   - Microtask
   - Macrotask
 - JS Engine (V8)
   - Call Stack
-  - Heap Memory 
+  - Heap Memory
   - Parser
   - Interpreter
   - Compiler
@@ -44,6 +45,7 @@
 # Javascript
 
 ## Runtime & JS Engine Concepts
+
 - Agent execution model
   - Realms
   - Scheduler
@@ -64,10 +66,10 @@
 
 - Data types
   - Primitive values
-  - Objects (reference)    
+  - Objects (reference)
     - Built-in primitive wrapper objects
     - Built-in Constructor objects
-    - Built-in Utility objects    
+    - Built-in Utility objects
 - Scope & Hoisting
 - Statements
   - Variables
@@ -104,6 +106,7 @@
 - async / await
 
 ## Browser Apis
+
 - Events
 - Networking
   - Fetch
@@ -119,12 +122,11 @@
   - Cache
   - IndexedDB
 
-
 ---
 
 # React Internals
 
-- Compiler 
+- Compiler
 - React Fiber architecture
   - Virtual DOM
     - Element Tree
@@ -137,17 +139,18 @@
       - Update (re-render)
       - Unmount
     - Rendering process
-      - Render Phase 
+      - Render Phase
       - Commit Phase
       - Browser Paint
-- Hooks 
-- Components 
-- APIs 
-- Directives 
+- Hooks
+- Components
+- APIs
+- Directives
 
 https://medium.com/@canpolat.dev/deep-dive-into-reacts-internal-architecture-from-virtual-dom-to-fiber-08dcf66b309d
 
 # Framework
+
 - Routing
 - Data Fetching
 - Error Handling
