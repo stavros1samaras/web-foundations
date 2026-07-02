@@ -131,6 +131,8 @@
   - Virtual DOM
     - Element Tree
     - Fiber Tree
+      - Current Tree
+      - Work-In-Progress Tree
     - Reconciliation (diffing algorithm)
   - Concurrent rendering
     - Prioritization
