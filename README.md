@@ -142,7 +142,18 @@
       - Render Phase
       - Commit Phase
       - Browser Paint
+    - Effect lifecycle
+      - Start synchronizing
+      - Stop synchronizing (cleanup)
 - Hooks
+  - State Hooks
+  - Effect Hooks
+  - Ref Hooks
+  - Context Hooks
+  - Performance Hooks
+  - Concurrent Hooks  
+  - Action Hooks  
+  - Custom Hooks
 - Components
 - APIs
 - Directives
