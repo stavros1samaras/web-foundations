@@ -6,30 +6,40 @@
     - A new Element Tree is created.
     - A Work-in-Progress Fiber Tree is built from the Element Tree.
     - The required DOM mutations are calculated.
-  - Commit Phase
+  - Commit Phase (non-interruptible)
     - The DOM mutations are applied to the real DOM.
     - The Work-in-Progress Fiber Tree becomes the Current Fiber Tree.
+    - The commit always runs to completion once it starts.
   - Browser Paint
     - The browser performs layout and paint.
     - The user sees the initial UI.
   - After Paint
     - `useEffect` callbacks are executed.
+
 - Update
-  - Render Phase
-    - `setState` creates an update.
+  - Trigger
+    - A state, prop, or context change schedules an update.
+    - React assigns a priority to the update.
+    - The update is placed into a lane.
+    - The scheduler decides when the work should start.
+  - Render Phase (interruptible)
     - React re-executes the component.
     - A new Element Tree is created.
     - A Work-in-Progress Fiber Tree is built from the new Element Tree.
     - Reconciliation happens between the Current Fiber Tree and the Work-in-Progress Fiber Tree.
     - The required DOM mutations are calculated.
-  - Commit Phase
+    - Higher-priority updates can interrupt the current render.
+    - Interrupted work may resume later or be restarted with newer state.
+  - Commit Phase (non-interruptible)
     - The DOM mutations are applied to the real DOM.
     - The Work-in-Progress Fiber Tree becomes the new Current Fiber Tree.
+    - The commit always runs to completion once it starts.
   - Browser Paint
     - The browser performs layout and paint.
     - The user sees the updated UI.
   - After Paint
     - `useEffect` cleanups and callbacks are executed.
+
 - Unmount
   - `useLayoutEffect` cleanups
   - `useEffect` cleanups
