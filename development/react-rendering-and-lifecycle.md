@@ -18,7 +18,11 @@
 
 - Update
   - Trigger
-    - A state, prop, or context change schedules an update.
+    - A trigger event occurs
+      - The state of a hook it uses changes.
+      - Its parent re-renders.
+      - Its props change (if it's memoized with React.memo).
+      - A context it uses changes.
     - React assigns a priority to the update.
     - The update is placed into a lane.
     - The scheduler decides when the work should start.
