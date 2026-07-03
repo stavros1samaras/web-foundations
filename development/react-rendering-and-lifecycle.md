@@ -1,50 +1,57 @@
 # react-rendering-and-lifecycle
 
-- Mount
-  - Render Phase
-    - React executes the component for the first time.
-    - A new Element Tree is created.
-    - A Work-in-Progress Fiber Tree is built from the Element Tree.
-    - The required DOM mutations are calculated.
-  - Commit Phase (non-interruptible)
-    - The DOM mutations are applied to the real DOM.
-    - The Work-in-Progress Fiber Tree becomes the Current Fiber Tree.
-    - The commit always runs to completion once it starts.
-  - Browser Paint
-    - The browser performs layout and paint.
-    - The user sees the initial UI.
-  - After Paint
-    - `useEffect` callbacks are executed.
-
-- Update
-  - Trigger
-    - A trigger event occurs
-      - The state of a hook it uses changes.
-      - Its parent re-renders.
-      - Its props change (if it's memoized with React.memo).
-      - A context it uses changes.
-    - React assigns a priority to the update.
-    - The update is placed into a lane.
-    - The scheduler decides when the work should start.
-  - Render Phase (interruptible)
-    - React re-executes the component.
-    - A new Element Tree is created.
-    - A Work-in-Progress Fiber Tree is built from the new Element Tree.
-    - Reconciliation happens between the Current Fiber Tree and the Work-in-Progress Fiber Tree.
-    - The required DOM mutations are calculated.
-    - Higher-priority updates can interrupt the current render.
-    - Interrupted work may resume later or be restarted with newer state.
-  - Commit Phase (non-interruptible)
-    - The DOM mutations are applied to the real DOM.
-    - The Work-in-Progress Fiber Tree becomes the new Current Fiber Tree.
-    - The commit always runs to completion once it starts.
-  - Browser Paint
-    - The browser performs layout and paint.
-    - The user sees the updated UI.
-  - After Paint
-    - `useEffect` cleanups and callbacks are executed.
-
-- Unmount
-  - `useLayoutEffect` cleanups
-  - `useEffect` cleanups
-  - DOM nodes are removed
+### Mount
+- **Render Phase**
+  - React executes the component for the first time.
+  - A new Element Tree is created.
+  - A Work-in-Progress Fiber Tree is built from the Element Tree.
+  - The required DOM mutations are calculated.
+- **Commit Phase (non-interruptible)**
+  - The DOM mutations are applied to the real DOM.
+  - The Work-in-Progress Fiber Tree becomes the Current Fiber Tree.
+  - The commit always runs to completion once it starts.
+- **Browser Paint**
+  - The browser performs layout and paint.
+  - The user sees the initial UI.
+- **After Paint**
+  - `useEffect` callbacks are executed.
+### Update
+- **Trigger**
+  - A trigger event occurs.
+    - The state of a hook it uses changes.
+    - Its parent re-renders.
+    - Its props change (if it's memoized with `React.memo`).
+    - A context it uses changes.
+  - React assigns a priority to the update.
+  - The update is placed into a lane.
+  - The scheduler decides when the work should start.
+- **Render Phase (interruptible)**
+  - React re-executes the component.
+  - A new Element Tree is created.
+  - A Work-in-Progress Fiber Tree is built from the new Element Tree.
+  - Reconciliation happens between the Current Fiber Tree and the Work-in-Progress Fiber Tree.
+  - The required DOM mutations are calculated.
+  - Higher-priority updates can interrupt the current render.
+  - Interrupted work may resume later or be restarted with newer state.
+- **Commit Phase (non-interruptible)**
+  - The DOM mutations are applied to the real DOM.
+  - The Work-in-Progress Fiber Tree becomes the new Current Fiber Tree.
+  - The commit always runs to completion once it starts.
+- **Browser Paint**
+  - The browser performs layout and paint.
+  - The user sees the updated UI.
+- **After Paint**
+  - `useEffect` cleanups and callbacks are executed.
+### Unmount
+- **Render Phase (interruptible)**
+  - React determines that the component must be removed.
+  - The corresponding Fiber is marked for deletion.
+  - The required DOM removals are calculated.
+- **Commit Phase (non-interruptible)**  
+  - The DOM nodes are removed from the real DOM.
+  - The commit always runs to completion once it starts.
+- **Browser Paint**
+  - The browser performs layout and paint.
+  - The user sees the UI without the removed component.
+- **After Paint**
+  - `useEffect` cleanups are executed.
