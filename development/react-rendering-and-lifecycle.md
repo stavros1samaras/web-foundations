@@ -1,0 +1,36 @@
+# react-rendering-and-lifecycle
+
+- Mount
+  - Render Phase
+    - React executes the component for the first time.
+    - A new Element Tree is created.
+    - A Work-in-Progress Fiber Tree is built from the Element Tree.
+    - The required DOM mutations are calculated.
+  - Commit Phase
+    - The DOM mutations are applied to the real DOM.
+    - The Work-in-Progress Fiber Tree becomes the Current Fiber Tree.
+  - Browser Paint
+    - The browser performs layout and paint.
+    - The user sees the initial UI.
+  - After Paint
+    - `useEffect` callbacks are executed.
+- Update
+  - Render Phase
+    - `setState` creates an update.
+    - React re-executes the component.
+    - A new Element Tree is created.
+    - A Work-in-Progress Fiber Tree is built from the new Element Tree.
+    - Reconciliation happens between the Current Fiber Tree and the Work-in-Progress Fiber Tree.
+    - The required DOM mutations are calculated.
+  - Commit Phase
+    - The DOM mutations are applied to the real DOM.
+    - The Work-in-Progress Fiber Tree becomes the new Current Fiber Tree.
+  - Browser Paint
+    - The browser performs layout and paint.
+    - The user sees the updated UI.
+  - After Paint
+    - `useEffect` cleanups and callbacks are executed.
+- Unmount
+  - `useLayoutEffect` cleanups
+  - `useEffect` cleanups
+  - DOM nodes are removed
