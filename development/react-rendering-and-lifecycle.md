@@ -55,3 +55,5 @@
   - The user sees the UI without the removed component.
 - **After Paint**
   - `useEffect` cleanups are executed.
+
+https://www.developerway.com/posts/react-re-renders-guide#-usememo-for-expensive-calculations
