@@ -1,18 +1,23 @@
 # Frontend Engineering
 
 
-- Infrastructure Engineering
-  - Architecture
-  - Performance
-    - Monitoring
-    - Caching
-  - CI/CD
 
-- Application Engineering
+- Architecture
   - Performance
-  - Security
-  - Privacy
-  - Localization 
-  - Accessibility
-  - Browser Compatibility
-  - Responsive Design
+    - Rendering
+    - Caching
+      - Server
+      - CDN
+      - Client
+  - Protection
+    - Security
+    - Privacy
+  - Inclusivity
+    - Accessibility
+    - Localization
+  - User Experience
+    - Responsive Design
+    - Browser Compatibility
+  - SEO
+  - Error Handling
+- CI/CD
