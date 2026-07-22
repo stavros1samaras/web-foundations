@@ -5,6 +5,8 @@
 - Architecture
   - Performance
     - Rendering
+    - Bundling
+    - Runtime
     - Caching
       - Server
       - CDN
@@ -12,12 +14,13 @@
   - Protection
     - Security
     - Privacy
-  - Inclusivity
+  - User Experience
     - Accessibility
     - Localization
-  - User Experience
     - Responsive Design
     - Browser Compatibility
-  - SEO
+  - Discoverability
+    - SEO
+    - Metadata
   - Error Handling
 - CI/CD
