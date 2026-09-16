@@ -4,7 +4,7 @@
 
 - Architecture
   - Scalability & Reusability
-    - [ ] Components
+    - [X] Components
     - [ ] Utilities
     - [x] Styles
     - [ ] Types
@@ -21,8 +21,8 @@
     - [ ] Security
     - [ ] Privacy
   - User Experience
-    - [ ] Accessibility
-    - [ ] Localization
+    - [X] Accessibility
+    - [X] Localization
     - [x] Responsive Design
     - [ ] Browser Compatibility
   - Discoverability
