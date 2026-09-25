@@ -8,11 +8,14 @@
     - [ ] Utilities
     - [x] Styles
     - [ ] Types
-    - [ ] Hooks
+    - [x] Hooks
   - Performance
+    - [ ] State Management 
     - [ ] Rendering
     - [ ] Bundling
     - [ ] Runtime
+      - [ ] Client
+      - [ ] Server
     - [ ] Caching
       - [ ] Server
       - [ ] CDN
