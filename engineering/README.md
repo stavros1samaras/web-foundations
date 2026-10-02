@@ -11,7 +11,7 @@
     - [x] Hooks
   - Performance
     - [ ] State Management 
-    - [ ] Rendering
+    - [x] Rendering
     - [ ] Bundling
     - [ ] Runtime
       - [ ] Client
