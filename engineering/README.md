@@ -12,12 +12,12 @@
   - Performance
     - [ ] State Management 
     - [x] Rendering
-    - [ ] Bundling
+    - [x] Bundling
     - [ ] Runtime
       - [ ] Client
       - [ ] Server
     - [ ] Caching
-      - [ ] Server
+      - [x] Server
       - [ ] CDN
       - [ ] Client
   - Protection
