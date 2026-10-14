@@ -7,7 +7,7 @@
     - [X] Components
     - [ ] Utilities
     - [x] Styles
-    - [ ] Types
+    - [x] Types
     - [x] Hooks
   - Performance
     - [ ] State Management 
