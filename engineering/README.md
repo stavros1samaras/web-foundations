@@ -1,7 +1,5 @@
 # Frontend Engineering
 
-
-
 - Architecture
   - Scalability & Reusability
     - [X] Components
@@ -31,4 +29,11 @@
   - Discoverability
     - [x] SEO
   - Error Handling
+    - [x] Runtime
+    - [x] UI
 - CI/CD
+  - [ ] Pipelines
+  - [ ] Testing
+      - [ ] E2E
+      - [ ] Unit
+        
