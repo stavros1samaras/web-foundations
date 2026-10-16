@@ -32,6 +32,7 @@
     - [x] Runtime
     - [x] UI
 - CI/CD
+  - [ ] Dependencies
   - [ ] Pipelines
   - [ ] Testing
       - [ ] E2E
