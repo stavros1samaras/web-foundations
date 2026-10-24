@@ -2,7 +2,7 @@
 
 - Architecture
   - Scalability & Reusability
-    - [X] Components
+    - [ ] Components
     - [ ] Utilities
     - [x] Styles
     - [x] Types
