@@ -2,11 +2,14 @@
 
 - Architecture
   - Scalability & Reusability
-    - [ ] Components
-    - [ ] Utilities
-    - [x] Styles
-    - [x] Types
-    - [x] Hooks
+    - Design Patterns
+      - [x] Components
+      - [ ] Utilities      
+      - [x] Types
+      - [x] Hooks
+    - Design Systems
+      - [x] Styles
+      - [ ] Typography
   - Performance
     - [ ] State Management 
     - [x] Rendering
@@ -33,8 +36,8 @@
     - [x] UI
 - CI/CD
   - [ ] Dependencies
-  - [ ] Pipelines
+  - [x] Pipelines
   - [ ] Testing
-      - [ ] E2E
+      - [x] E2E
       - [ ] Unit
         
