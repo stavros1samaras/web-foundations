@@ -10,6 +10,7 @@
     - Design Systems
       - [x] Styles
       - [ ] Typography
+      - [ ] Animation
   - Performance
     - [ ] State Management 
     - [x] Rendering
